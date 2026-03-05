@@ -18,7 +18,17 @@
         <label for="tableSelect">Table</label>
         <select id="tableSelect"></select>
       </div>
-      <button id="rollBtn">Roll</button>
+
+      <div class="field">
+        <label for="timesInput">Times</label>
+        <input id="timesInput" type="number" min="1" value="1" />
+      </div>
+
+      <div class="actions-inline">
+        <button id="rollBtn">Roll</button>
+        <button id="randomTableBtn" title="Pick a random table">Random Table</button>
+        <button id="clearHistoryBtn" class="secondary" title="Clear roll history">Clear History</button>
+      </div>
     </section>
 
     <section class="result">
@@ -30,6 +40,13 @@
       <div class="actions">
         <button id="copyBtn" class="secondary">Copy Result</button>
       </div>
+    </section>
+
+    <section class="history">
+      <h3>History</h3>
+      <ul id="historyList" class="history-list">
+        <!-- history items appear here -->
+      </ul>
     </section>
   </main>
 
